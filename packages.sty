@@ -1,0 +1,29 @@
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, allcolors=americanrose]{hyperref}
+\usepackage{tcolorbox}
+\usepackage{float}
+
+\definecolor{americanrose}{rgb}{1.0, 0.01, 0.24}
+\definecolor{amaranth}{rgb}{0.9, 0.17, 0.31}
+
+\newcommand{\picSettings}[3]{%
+\begin{figure}[H]
+\centering
+\label{#2}
+\includegraphics[width=0.75\textwidth]{#1}
+\caption{#3}
+\end{figure}%
+}
+
+\newtcolorbox{disclaimer}{
+  colback=red!5!white,
+  colframe=amaranth,
+  fonttitle=\bfseries,
+  title=Внимание
+}
+
+\title {\textbf{Тепловые карты: зачем нужны в мобильных приложениях и примеры использования} }
+\author{Катуа}
